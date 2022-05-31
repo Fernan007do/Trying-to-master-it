@@ -119,6 +119,11 @@ span {
     font-size: 2em;
     text-align: center;
     margin-top: 1em;
+    transition-duration: 500ms;
+}
+
+.logo__title:hover{
+    font-size: 3em;
 }
 
 
@@ -258,7 +263,10 @@ span {
     background-blend-mode: multiply;
     color: #fff;
     background-attachment: fixed;
+    transition-duration: 1000ms;
 }
+
+
 
 .background-image--queHacer {
     justify-content: center;
@@ -389,12 +397,37 @@ span {
 
     .ubication-container{
         grid-area: descripcion;
+        background-color: var(--clr-accent);
     }
 
     .ubication-container__map{
         grid-area: mapa;
     }
 
+}
+
+.ubication-container{
+    transition-duration: 350ms;
+}
+
+.ubication-container:hover{
+    background-color: var(--clr-accent);
+    color: #fff;
+}
+
+#reserva {
+    transition-duration: 350ms;
+}
+
+#reserva:hover{
+    background-color: var(--clr-icons)
+}
+.faqs {
+    transition-duration: 350ms;
+}
+.faqs:hover {
+    background-color: #80868B;
+    color: #fff;
 }
 
 .splited-container__body {
