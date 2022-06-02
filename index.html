@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOREST CABINS</title>
     <link rel="shortcut icon" href="./img/casita.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,20 +19,34 @@
 <body>
     <div class="main-grid">
         
-        <header class="encabezado" id="Encabezado">
+        <header class="" id="Encabezado">
 
-            <a href="./index.html">
-                <img class="logo" src="./img/casita-verde.png" alt="Casita Ficticia">
-            </a> 
-    
-    
-            <nav class="menu">
-                <a class="menu__link" href="./pages/contacto.html">Contactenos</a>
-                <a class="menu__link" href="./pages/galeria.html">Galería</a>
-                <a class="menu__link" href="./pages/servicios.html">Servicios</a>
-                <a class="menu__link" href="./pages/queHacer.html">Qué Hacer?</a>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand col-lg-6" href="./index.html">
+                      <img src="./img/casita-verde.png" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 men">
+                      <li class="nav-item">
+                        <a class="nav-link active men__link" aria-current="page" href="./pages/servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active men__link aria-current="page" href="./pages/queHacer.html">Qué Hacer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active men__link aria-current="page" href="./pages/galeria.html">Galería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active men__link" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
-    
         </header>
     
         <main>
@@ -43,8 +58,8 @@
             </section>
     
             
-            <section class="container container--background-light" id="Second">
-                <div class="splited-container">
+            <section class="cont cont--background-light" id="Second">
+                <div class="splited-cont">
                     <h2 class="intro">
                         Su sueño es <span>realidad</span>
                     </h2>
@@ -52,10 +67,10 @@
             </section>
             
 
-            <section class="container container--background-accent" id="Third">
-                <div class="splited-container">
-                    <div class="center">
-                        <p class="splited-container__body">
+            <section class="cont cont--background-accent" id="Third">
+                <div class="splited-cont">
+                    <div class="cent">
+                        <p class="splited-cont__body">
                             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente nesciunt
                             distinctio
                             necessitatibus sed veniam saepe unde fugiat officiis tempora, obcaecati aut iure adipisci
@@ -63,8 +78,8 @@
                             soluta ullam quia fuga. Debitis?"
                         </p>
                     </div>
-                    <div class="center">
-                        <p class="splited-container__body">
+                    <div class="cent">
+                        <p class="splited-cont__body">
                             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente nesciunt
                             distinctio
                             necessitatibus sed veniam saepe unde fugiat officiis tempora, obcaecati aut iure adipisci
@@ -82,23 +97,40 @@
                     <h3>ABOUT US...</h3>
                 </header>
 
-                <div class="splited-container">
-                    <div class="center">
-                        <p class="splited-container__body">
+                <div class="splited-cont">
+                    <div class="cent">
+                        <p class="splited-cont__body">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis maiores qui, repellat quae, dolore excepturi possimus distinctio autem porro minima laboriosam quas, ullam nesciunt eligendi ex ad saepe sequi.
                         </p>
 
-                        <a class= "btn" href="#">Ver más</a>
+                        <a class= "bot" href="#">Ver más</a>
                     </div>
                     
                     
 
                     <div class="slider">
         
-                        <div class="slider-holder">
-                            <img src="./img/21.jpg" class="slider-image" />
-                        </div>  
-
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="./img/23.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./img/23.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./img/23.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>    
                     </div>    
 
                 </div>
@@ -108,58 +140,58 @@
     
             <!-- SECCIÓN DE OPINIONES 5TA -->
             <!-- OPINIONES CON LINK E ICONOS (Creo que puede ir <article>) -->
-            <section class="container container--background-dark" id="Opiniones">
+            <section class="cont cont--background-dark" id="Opiniones">
                 <header class="section-title">
                     <h3>FEEDBACK</h3>
                 </header>
     
-                <div class="splited-container">
-                    <div class="opnion-container">
+                <div class="splited-cont">
+                    <div class="opnion-cont">
 
-                        <div class="opinion-container__icon">
+                        <div class="opinion-cont__icon">
                             <a class="icon" href="#"><img src="./img/icons8-facebook.svg" alt="iconoFacebook"></img></a>
                         </div>
-                        <div class="center">
-                            <p class="opinion-container__body">
+                        <div class="cent">
+                            <p class="opinion-cont__body">
                                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente nesciunt
                                 distinctio
                                 necessitatibus sed veniam saepe unde fugiat officiis tempora, obcaecati aut iure adipisci
                                 ipsa
                                 soluta ullam quia fuga. Debitis?"
                             </p>
-                            <p class="opinion-container__name">-blablablabla</p>
+                            <p class="opinion-cont__name">-blablablabla</p>
                         </div>
                     </div>
-                    <div class="opnion-container">
+                    <div class="opnion-cont">
 
-                        <div class="opinion-container__icon">
+                        <div class="opinion-cont__icon">
                             <a class="icon" href="#"><img src="./img/icons8-tripadvisor.svg" alt="iconoTripadvisor"></img></a>
                         </div>
-                        <div class="center">
-                            <p class="opinion-container__body">
+                        <div class="cent">
+                            <p class="opinion-cont__body">
                                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente nesciunt
                                 distinctio
                                 necessitatibus sed veniam saepe unde fugiat officiis tempora, obcaecati aut iure adipisci
                                 ipsa
                                 soluta ullam quia fuga. Debitis?"
                             </p>
-                            <p class="opinion-container__name">-blablablabla</p>
+                            <p class="opinion-cont__name">-blablablabla</p>
                         </div>
                     </div>
-                    <div class="opnion-container">
+                    <div class="opnion-cont">
 
-                        <div class="opinion-container__icon">
+                        <div class="opinion-cont__icon">
                             <a class="icon" href="#"><img src="./img/icons8-google-maps.svg" alt="iconoMaps"></img></a>
                         </div>
-                        <div class="center">
-                            <p class="opinion-container__body">
+                        <div class="cent">
+                            <p class="opinion-cont__body">
                                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente nesciunt
                                 distinctio
                                 necessitatibus sed veniam saepe unde fugiat officiis tempora, obcaecati aut iure adipisci
                                 ipsa
                                 soluta ullam quia fuga. Debitis?"
                             </p>
-                            <p class="opinion-container__name">-blablablabla</p>
+                            <p class="opinion-cont__name">-blablablabla</p>
                         </div>
                     </div>
                 </div>
@@ -172,24 +204,24 @@
             <!-- EN ESTA PARTE SE PUEDE ENLAZAR A LAS OTRAS PARTES DE MI PAGINA, CADA DIV CON IMAGENES DE FONDO -->
             <section class="big-options" id="Sixth">
     
-                <div class="  background-image background-image--servicios big-options__container">
+                <div class="  background-image background-image--servicios big-options__cont">
                     <div class="big-options__element">
                         <h3 class="big-options__title">SERVICIOS</h3>
-                        <a class="btn btn--contrast" href="./pages/servicios.html">Ver más</a>
+                        <a class="bot bot--contrast" href="./pages/servicios.html">Ver más</a>
                     </div>
                 </div>
     
-                <div class=" background-image background-image--gallery big-options__container">
+                <div class=" background-image background-image--gallery big-options__cont">
                     <div class="big-options__element">
                         <h3 class="big-options__title">GALERIA</h3>
-                        <a class="btn btn--contrast" href="./pages/galeria.html">Ver más</a>
+                        <a class="bot bot--contrast" href="./pages/galeria.html">Ver más</a>
                     </div>
                 </div>
     
-                <div class=" background-image background-image--queHacer big-options__container">
+                <div class=" background-image background-image--queHacer big-options__cont">
                     <div class="big-options__element">
                         <h3 class="big-options__title">QUE HACER?</h3>
-                        <a class="btn btn--contrast" href="./pages/queHacer.html">Ver más</a>
+                        <a class="bot bot--contrast" href="./pages/queHacer.html">Ver más</a>
                     </div>
                 </div>
     
@@ -199,12 +231,12 @@
     
             <!-- SÉPTIMA SECCIÓN -->
             <!-- ESTA SECCIÓN DE CONTACTO ES MÁS CHICA, PERO LA PAGINA DESTINADA TIENE MÁS DETALLES, MUAJAJA -->
-            <section class="splited-container" id="Contact-us">
+            <section class="splited-cont" id="Contact-us">
     
-                <div class="contact-container">
-                    <div class="contact-container__header center">
-                        <h3 class="contact-container__title">CONTACTO</h3>
-                        <p class="contact-container__body">
+                <div class="contact-cont">
+                    <div class="contact-cont__header cent">
+                        <h3 class="contact-cont__title">CONTACTO</h3>
+                        <p class="contact-cont__body">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis similique dignissimos
                             ut
                             consequatur nisi, sequi tenetur nihil aliquid recusandae est veritatis? Fuga assumenda non
@@ -213,7 +245,7 @@
                         </p>
                     </div>
     
-                    <div class="form center">
+                    <div class="form cent">
                         <!-- FORMULARIO -->
                         <form action="" method="" enctype="">
 
@@ -241,10 +273,10 @@
                                 <input type="checkbox" value="yes" checked>Quiero suscribirme to the newsletter
                             </div>
                             <div >
-                                <input class="btn btn--form" type="reset" value="Borrar Todo">
+                                <input class="bot bot--form" type="reset" value="Borrar Todo">
                             </div>
                             <div>
-                                <input  class="btn btn--form" type="submit" value="Enviar">
+                                <input  class="bot bot--form" type="submit" value="Enviar">
                             </div> 
                         </form>
                     </div>
@@ -252,7 +284,7 @@
                 </div>
 
                 <!-- EN ESTE DIV VA EL LOGO Y EL NOMRE DE NUEVO, PA QUE QUEDE FACHERO NOMAS -->    
-                <div class="center" >
+                <div class="cent" >
                     <img src="./img/casita-verde.png" alt="logo FOREST CABINS">
                     <h3 class="logo__title">Forest Cabins</h3>
                 </div>
@@ -263,11 +295,11 @@
         </main>
     
         <!-- PIÉ DE PÁGINA -->
-<!--         <footer class="pie-pagina" id="end">
-            <div class="pie-pagina__container">
+        <footer class="pie-pagina container-fluid">
+            <div class="pie-pagina__cont">
                 <h4 class="pie-pagina__title">Nuestras redes sociales:</h4>
     
-                <div class="redes">
+                <div class="redes container-sm d-flex  justify-content-around align-items-center col-sm-6 ">
                     <a class="icon" href="#"><img src="./img/icons8-instagram.svg" alt=""></a>
                     <a class="icon" href="#"><img src="./img/icons8-facebook.svg" alt=""></a>
                     <a class="icon" href="#"><img src="./img/icons8-whatsapp.svg" alt=""></a>
@@ -276,9 +308,11 @@
                 <h5 class="pie-pagina__end">2022 Todos los derechos reservados ---- Powered by <a href="#">Fercho Solutions</a></h5>
             </div>
     
-        </footer> -->
+        </footer>
     
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
 
 

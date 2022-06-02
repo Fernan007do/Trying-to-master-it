@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOREST CABINS</title>
     <link rel="shortcut icon" href="../img/casita.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,20 +18,34 @@
 
 <body>
     <div class="main-grid">
-        <header class="encabezado" id="Encabezado">
+        <header  id="Encabezado">
 
-            <a href="../index.html">
-                <img class="logo" src="../img/casita-verde.png" alt="Casita Ficticia">
-            </a> 
-    
-    
-            <nav class="menu">
-                <a class="menu__link" href="./contacto.html">Contactenos</a>
-                <a class="menu__link" href="./galeria.html">Galería</a>
-                <a class="menu__link" href="./servicios.html">Servicios</a>
-                <a class="menu__link" href="./queHacer.html">Qué Hacer?</a>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand col-lg-6" href="../index.html">
+                      <img src="../img/casita-verde.png" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 men">
+                      <li class="nav-item">
+                        <a class="nav-link active men__link" aria-current="page" href="./servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active men__link aria-current="page" href="./queHacer.html">Qué Hacer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active men__link aria-current="page" href="./galeria.html">Galería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active men__link" aria-current="page" href="./contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
-    
         </header>
     
         <main>
@@ -44,34 +59,64 @@
 
         </main>
 
-        <section>
-            <div class="slider">
-                <img src="../img/icons8-left-40.png" alt="" class="flechita">
-                <img src="../img/raf.webp" alt="" class="slider-image">
-                <img src="../img/icons8-right-40.png" alt="" class="flechita">
-            </div>
-
-            <p class="slider__description">Este slider no funciona (no es slider jajaj)</p>
-            
-            
+        <section class="container-lg mt-5 mb-5">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../img/galeria/wallpaper-hd-abstract-natureabstract-nature-art-best-wallpapers-hd-wallpapers-best-hd-tiwb-1895820419.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/galeria/wallpaper-hd-abstract-natureabstract-nature-art-best-wallpapers-hd-wallpapers-best-hd-tiwb-1895820419.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/galeria/wallpaper-hd-abstract-natureabstract-nature-art-best-wallpapers-hd-wallpapers-best-hd-tiwb-1895820419.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
         </section>
+            
 
         <secction>
-            <div class="gallery-container">
-                <img src="../img/galería/andy-holmes-f6eWKcd8_dA-unsplash.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/grace-wang-ImvIZBrWRfc-unsplash.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/ian-keefe-OgcJIKRnRC8-unsplash (1).jpg" alt="" class="gallery-item">
-                <img src="../img/galería/karsten-winegeart-NVhD7aGh9gQ-unsplash.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/lili-kovac-BSQq5dRT_KU-unsplash.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/maxime-dore-XjD8C1U9qYQ-unsplash.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/olivier-guillard-FKJgBUDoVC0-unsplash.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/ryan-stone-rlGQoBwwC90-unsplash.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/sidney-pearce-ZNG-2mynAns-unsplash.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/nebula-butterfly-effect-in-space_3840x2400_xtrafondos.com.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/room-with-neon-lights_2880x1800_xtrafondos.com.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/wallpaper-hd-abstract-natureabstract-nature-art-best-wallpapers-hd-wallpapers-best-hd-tiwb-1895820419.jpg" alt="" class="gallery-item">
-                <img src="../img/galería/wp3755313.jpg" alt="" class="gallery-item">
+            <div class="gallery-cont">
+                <img src="../img/galeria/andy-holmes-f6eWKcd8_dA-unsplash.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/grace-wang-ImvIZBrWRfc-unsplash.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/ian-keefe-OgcJIKRnRC8-unsplash (1).jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/karsten-winegeart-NVhD7aGh9gQ-unsplash.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/lili-kovac-BSQq5dRT_KU-unsplash.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/maxime-dore-XjD8C1U9qYQ-unsplash.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/olivier-guillard-FKJgBUDoVC0-unsplash.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/ryan-stone-rlGQoBwwC90-unsplash.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/sidney-pearce-ZNG-2mynAns-unsplash.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/nebula-butterfly-effect-in-space_3840x2400_xtrafondos.com.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/room-with-neon-lights_2880x1800_xtrafondos.com.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/wallpaper-hd-abstract-natureabstract-nature-art-best-wallpapers-hd-wallpapers-best-hd-tiwb-1895820419.jpg" alt="" class="gallery-item">
+                <img src="../img/galeria/wp3755313.jpg" alt="" class="gallery-item">
             
             </div>
         </secction>
@@ -80,11 +125,11 @@
 
     
         <!-- PIÉ DE PÁGINA -->
-        <footer class="pie-pagina">
-            <div class="pie-pagina__container">
+        <footer class="pie-pagina container-fluid">
+            <div class="pie-pagina__cont">
                 <h4 class="pie-pagina__title">Nuestras redes sociales:</h4>
     
-                <div class="redes">
+                <div class="redes container-sm d-flex  justify-content-around align-items-center col-sm-6 ">
                     <a class="icon" href="#"><img src="../img/icons8-instagram.svg" alt=""></a>
                     <a class="icon" href="#"><img src="../img/icons8-facebook.svg" alt=""></a>
                     <a class="icon" href="#"><img src="../img/icons8-whatsapp.svg" alt=""></a>
@@ -97,6 +142,7 @@
     
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 
 

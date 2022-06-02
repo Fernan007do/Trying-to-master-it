@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabañas Ficticias</title>
     <link rel="shortcut icon" href="../img/casita.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,20 +18,34 @@
 <body>
 
 
-    <header class="encabezado" id="Encabezado">
+    <header  id="Encabezado">
 
-        <a href="../index.html">
-            <img class="logo" src="../img/casita-verde.png" alt="Casita Ficticia">
-        </a> 
-
-
-        <nav class="menu">
-            <a class="menu__link" href="./contacto.html">Contactenos</a>
-            <a class="menu__link" href="./galeria.html">Galería</a>
-            <a class="menu__link" href="./servicios.html">Servicios</a>
-            <a class="menu__link" href="./queHacer.html">Qué Hacer?</a>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand col-lg-6" href="../index.html">
+                  <img src="../img/casita-verde.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 men">
+                  <li class="nav-item">
+                    <a class="nav-link active men__link" aria-current="page" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active men__link aria-current="page" href="./queHacer.html">Qué Hacer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active men__link aria-current="page" href="./galeria.html">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active men__link" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
-
     </header>
 
     <main>
@@ -42,12 +57,12 @@
         </section>
 
 
-        <section class="splited-container" id="Contact-us">
+        <section class="splited-cont" id="Contact-us">
     
-            <div class="contact-container">
-                <div class="contact-container__header center">
-                    <h3 class="contact-container__title">CONTACTO</h3>
-                    <p class="contact-container__body">
+            <div class="contact-cont">
+                <div class="contact-cont__header cent">
+                    <h3 class="contact-cont__title">CONTACTO</h3>
+                    <p class="contact-cont__body">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis similique dignissimos
                         ut
                         consequatur nisi, sequi tenetur nihil aliquid recusandae est veritatis? Fuga assumenda non
@@ -56,7 +71,7 @@
                     </p>
                 </div>
 
-                <div class="form center">
+                <div class="form cent">
                     <!-- FORMULARIO -->
                     <form action="" method="" enctype="">
 
@@ -84,10 +99,10 @@
                             <input type="checkbox" value="yes" checked>Quiero suscribirme to the newsletter
                         </div>
                         <div >
-                            <input class="btn btn--form" type="reset" value="Borrar Todo">
+                            <input class="bot bot--form" type="reset" value="Borrar Todo">
                         </div>
                         <div>
-                            <input  class="btn btn--form" type="submit" value="Enviar">
+                            <input  class="bot bot--form" type="submit" value="Enviar">
                         </div> 
                     </form>
                 </div>
@@ -95,7 +110,7 @@
             </div>
 
             <!-- EN ESTE DIV VA EL LOGO Y EL NOMRE DE NUEVO, PA QUE QUEDE FACHERO NOMAS -->    
-            <div class="center" >
+            <div class="cent" >
                 <img src="../img/casita-verde.png" alt="logo FOREST CABINS">
                 <h3 class="logo__title">Forest Cabins</h3>
             </div>
@@ -104,24 +119,22 @@
         </section>
 
 
-        <section class="splited-container" id="ubicacion">
-            <div class="ubication-container">
+        <section class="splited-cont container-fluid row" id="ubicacion">
+            <div class="col-lg-12">
 
-                <header class="center">
-                    <img src="../img/icons8-google-maps.svg" alt="iconoMaps">
-                    <h2 class="ubication-container__title"> Dónde estamos?</h2>
-                </header>
-                <div class="center">
-                    <p class="ubication-container__body">
+                <header class="d-flex flex-column justify-content-center align-items-center">
+                    <img class="icon" src="../img/icons8-google-maps.svg" alt="iconoMaps">
+                    <h2 class="ubication-cont__title"> Dónde estamos?</h2>
+                    <p>
                         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente nesciunt
                         distinctio
                         necessitatibus sed veniam saepe unde fugiat officiis tempora, obcaecati aut iure adipisci
                         ipsa
                         soluta ullam quia fuga. Debitis?"
                     </p> 
-                </div>
+                </header>
             </div>
-            <div class="ubication-container__map">
+            <div class="col-lg-12">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4798.788324033026!2d-65.00700036433227!3d-31.73621904812539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432986f9eb90f67%3A0x7ccf466cb83b0005!2sValle%20Escondido%20El%20Balcon!5e0!3m2!1ses!2sar!4v1651536128482!5m2!1ses!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -133,8 +146,8 @@
 
         </section>
 
-        <section class="splited-container" id=reserva>
-            <div class="reserva__block center">
+        <section class="splited-cont p-4" id=reserva>
+            <div class="reserva__block col-lg-12 d-flex flex-column justify-content-center align-items-center">
                 <h3 class="reserva__title">Reservas</h3>
                 <div class="form ">
                     <form  action="">
@@ -169,7 +182,7 @@
                         </div>
 
                         <div>
-                            <input  class="btn btn--form" type="submit" value="Buscar">
+                            <input  class="bot bot--form" type="submit" value="Buscar">
                         </div>
 
 
@@ -177,12 +190,12 @@
                 </div>
             </div>
 
-            <div class="calendar center">
+            <div class="calendar col-lg-12">
                 <img class="calendar__image" src="../img/icons8-calendar.svg" alt="">
             </div>
         </section>
 
-        <section class="faqs">
+        <section class="faqs p-6">
             <h3 class="section-title">Preguntas Frecuentes</h3>
 
             <div>
@@ -283,11 +296,11 @@
 
 
     <!-- PIÉ DE PÁGINA -->
-    <footer class="pie-pagina">
-        <div class="pie-pagina__container">
+    <footer class="pie-pagina container-fluid">
+        <div class="pie-pagina__cont">
             <h4 class="pie-pagina__title">Nuestras redes sociales:</h4>
 
-            <div class="redes">
+            <div class="redes container-sm d-flex  justify-content-around align-items-center col-sm-6 ">
                 <a class="icon" href="#"><img src="../img/icons8-instagram.svg" alt=""></a>
                 <a class="icon" href="#"><img src="../img/icons8-facebook.svg" alt=""></a>
                 <a class="icon" href="#"><img src="../img/icons8-whatsapp.svg" alt=""></a>
@@ -297,6 +310,8 @@
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 
 
