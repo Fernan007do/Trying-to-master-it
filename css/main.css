@@ -428,9 +428,11 @@ span {
 }
 
 #reserva:hover{
-    background-color: var(--clr-icons)
+    border: .5rem solid var(--clr-icons);
+
 }
 .faqs {
+    padding-block: 1rem;
     transition-duration: 350ms;
 }
 .faqs:hover {
@@ -754,7 +756,25 @@ span {
 .services-icon__overlay--v{
     background: rgba(136, 162, 54, .6) ;
     color: #000000;
+}
 
+/* Esta animacion de Lluvia se ve en la pagina queHaacer */
+.services-icon__overlay--rain{
+    background: url(../img/rain.png);
+    animation: rain .3s linear infinite;
+}
+
+@keyframes rain
+{
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 20% 100%;
+    }
+
+    
 }
 
 .services-icon__overlay--blur{
